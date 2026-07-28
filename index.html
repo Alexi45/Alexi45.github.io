@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-en="Alejandro Riscart Rosado — Full-Stack Developer">Alejandro Riscart Rosado — Desarrollador Full-Stack</title>
+  <meta name="description"
+    data-en="Full-Stack developer in Seville. Java, Spring Boot, Angular and Node.js. Enterprise applications at Minsait and products of my own, built end to end."
+    content="Desarrollador Full-Stack en Sevilla. Java, Spring Boot, Angular y Node.js. Aplicaciones empresariales en Minsait y producto propio construido de punta a punta.">
+  <meta name="author" content="Alejandro Riscart Rosado">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alexi45.github.io/">
+  <meta name="theme-color" content="#07090f">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Alejandro Riscart Rosado — Desarrollador Full-Stack">
+  <meta property="og:description" content="Java · Spring Boot · Angular · Node.js. Sevilla, España.">
+  <meta property="og:url" content="https://alexi45.github.io/">
+  <meta property="og:image" content="https://alexi45.github.io/assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alejandro Riscart Rosado — Desarrollador Full-Stack, Sevilla">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Sin JavaScript no hay animaciones de entrada: el contenido se muestra tal cual. -->
+  <noscript>
+    <style>
+      .anim, .hero-title .line-i, .reveal { opacity: 1 !important; transform: none !important; }
+      .kbd-btn, .footer-hint { display: none !important; }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Alejandro Riscart Rosado",
+      "url": "https://alexi45.github.io/",
+      "jobTitle": "Desarrollador Full-Stack",
+      "worksFor": { "@type": "Organization", "name": "Minsait" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Sevilla", "addressCountry": "ES" },
+      "email": "mailto:jarlaaxlety@gmail.com",
+      "alumniOf": [
+        { "@type": "EducationalOrganization", "name": "Salesianas María Auxiliadora Nervión" },
+        { "@type": "EducationalOrganization", "name": "Salesianos Triana" }
+      ],
+      "sameAs": [
+        "https://github.com/Alexi45",
+        "https://www.linkedin.com/in/alejandro-riscart-rosado-53802123b/"
+      ],
+      "knowsLanguage": ["es", "en"],
+      "knowsAbout": ["Java", "Spring Boot", "Angular", "TypeScript", "Node.js", "SQL", "Android", "Selenium"]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-en="Skip to content">Saltar al contenido</a>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Alejandro Riscart Rosado">
+        <span class="brand-mark">AR</span>
+        <span class="brand-name">Alejandro Riscart</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Principal">
+        <a href="#sobre-mi" data-en="About">Sobre mí</a>
+        <a href="#experiencia" data-en="Experience">Experiencia</a>
+        <a href="#proyectos" data-en="Work">Proyectos</a>
+        <a href="#skills" data-en="Stack">Stack</a>
+        <a href="#formacion" data-en="Education">Formación</a>
+        <a href="#contacto" data-en="Contact">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="kbd-btn" id="paletteBtn" type="button" aria-label="Abrir paleta de comandos">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.2" />
+            <path d="m15.2 15.2 4 4" stroke-linecap="round" />
+          </svg>
+          <kbd>⌘K</kbd>
+        </button>
+        <a class="nav-cv" href="assets/CV-Alejandro-Riscart-Rosado.pdf" data-cv download data-en="CV">CV</a>
+        <button class="icon-btn" id="langBtn" type="button" aria-label="Switch to English">
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">
+          <svg class="ico-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" />
+            <g stroke-linecap="round">
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
+            </g>
+          </svg>
+          <svg class="ico-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+            <path d="M20 14.2A8.4 8.4 0 1 1 9.8 4a6.8 6.8 0 0 0 10.2 10.2Z" />
+          </svg>
+        </button>
+        <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+        <canvas id="field"></canvas>
+        <div class="hero-fade"></div>
+      </div>
+
+      <div class="wrap hero-layout">
+        <div class="hero-text">
+          <p class="pill anim" style="--d: .05s">
+            <span class="dot" aria-hidden="true"></span>
+            <span data-en="Available for new opportunities">Disponible para nuevas oportunidades</span>
+          </p>
+
+          <h1 class="hero-title">
+            <span class="line"><span class="line-i anim" style="--d: .12s">Alejandro</span></span>
+            <span class="line"><span class="line-i accent anim" style="--d: .2s">Riscart Rosado</span></span>
+          </h1>
+
+          <p class="hero-role anim" style="--d: .3s">
+            <span data-en="Full-Stack Developer">Desarrollador Full-Stack</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span data-en="Seville, Spain">Sevilla, España</span>
+          </p>
+
+          <p class="hero-lead anim" style="--d: .38s"
+            data-en="I build enterprise applications at Minsait and my own products on the side. I care about backend that holds up under load, APIs that explain themselves, and interfaces someone can use without a manual.">
+            Construyo aplicaciones empresariales en Minsait y producto propio por mi cuenta.
+            Me importa el backend que aguanta, las APIs que se explican solas y las interfaces
+            que alguien puede usar sin manual.
+          </p>
+
+          <div class="hero-cta anim" style="--d: .46s">
+            <a class="btn btn-primary magnetic" href="#proyectos">
+              <span data-en="See my work">Ver mi trabajo</span>
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
+                <path d="M5 12h13M13 6.5 18.5 12 13 17.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="btn btn-ghost" id="copyMail" type="button">
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2.4" />
+                <path d="m3.8 7 8.2 5.6L20.2 7" />
+              </svg>
+              <span id="copyMailLabel">jarlaaxlety@gmail.com</span>
+            </button>
+          </div>
+
+          <div class="hero-social anim" style="--d: .54s">
+            <a href="https://github.com/Alexi45" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path fill="currentColor" stroke="none"
+                  d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/alejandro-riscart-rosado-53802123b/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path fill="currentColor" stroke="none"
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.6 8.75 23 11 23 14.4V21h-4v-5.8c0-1.4-.03-3.2-2-3.2s-2.3 1.5-2.3 3.1V21h-4V9Z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="cv-link" href="assets/CV-Alejandro-Riscart-Rosado.pdf" data-cv download>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path d="M12 3.5v11m0 0 4-4m-4 4-4-4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4.5 16.5v2a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-2" stroke-linecap="round" />
+              </svg>
+              <span data-en="Download CV">Descargar CV</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card anim" style="--d: .3s">
+          <figure class="portrait">
+            <!-- Para usar tu foto real: guarda assets/foto.jpg y aparece sola. -->
+            <img id="portraitImg" src="assets/foto.jpg" alt="Alejandro Riscart Rosado" hidden>
+            <div class="monogram" id="monogram" aria-hidden="true">AR</div>
+          </figure>
+          <dl class="facts">
+            <div>
+              <dt data-en="Currently">Actualmente</dt>
+              <dd>Minsait <span class="facts-note" data-en="· Seville">· Sevilla</span></dd>
+            </div>
+            <div>
+              <dt data-en="Focus">Foco</dt>
+              <dd data-en="Backend &amp; Full-Stack">Backend y Full-Stack</dd>
+            </div>
+            <div>
+              <dt data-en="Core stack">Stack principal</dt>
+              <dd>Java · Spring Boot · Angular</dd>
+            </div>
+            <div>
+              <dt data-en="Languages">Idiomas</dt>
+              <dd data-en="Spanish (native) · English (basic)">Español (nativo) · Inglés (básico)</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="marquee anim" style="--d: .62s" aria-label="Tecnologías principales">
+        <div class="marquee-track" id="marqueeTrack">
+          <ul class="marquee-set">
+            <li>Java</li><li>Spring&nbsp;Boot</li><li>Angular</li><li>TypeScript</li><li>Node.js</li>
+            <li>SQL</li><li>Git</li><li>Selenium</li><li>Android</li><li>REST</li><li>JWT</li><li>Express</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 01 · SOBRE MÍ ═══════════════ -->
+    <section id="sobre-mi" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="num">01</span><span data-en="About">Sobre mí</span></p>
+          <h2 class="section-title" data-en="Someone who ships, not just codes">
+            Alguien que entrega, no solo que programa
+          </h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead"
+              data-en="I trained in Multiplatform Application Development and went straight into technology consulting. Since then my days have been enterprise Java: Spring Boot services, Angular front-ends, relational databases and the unglamorous work of keeping a system running for people who depend on it.">
+              Me formé en Desarrollo de Aplicaciones Multiplataforma y entré directo en consultoría
+              tecnológica. Desde entonces mi día a día es Java empresarial: servicios con Spring Boot,
+              front-ends en Angular, bases de datos relacionales y el trabajo poco glamuroso de
+              mantener en pie un sistema del que depende gente real.
+            </p>
+            <p
+              data-en="Outside of work I build my own products end to end — from the database schema to the pricing page. That's where I learned what a ticket never teaches you: scoping something small enough to finish, and actually finishing it.">
+              Fuera del trabajo construyo producto propio de principio a fin: del esquema de la base de
+              datos a la página de precios. Ahí he aprendido lo que ningún ticket te enseña: acotar algo
+              lo bastante pequeño como para terminarlo, y terminarlo de verdad.
+            </p>
+            <p
+              data-en="What I'm looking for now: a team where I can grow on the backend side, with people who review code properly and care about what they ship.">
+              Lo que busco ahora: un equipo donde crecer en la parte de backend, con gente que revise
+              el código de verdad y a la que le importe lo que entrega.
+            </p>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong data-count="4">4</strong>
+              <span data-en="years in professional development">años de experiencia profesional</span>
+            </div>
+            <div class="stat">
+              <!-- Este número se actualiza solo desde la API pública de GitHub. -->
+              <strong data-count="23" id="repoCount">23</strong>
+              <span data-en="public repositories on GitHub">repositorios públicos en GitHub</span>
+            </div>
+            <div class="stat">
+              <strong data-count="2">2</strong>
+              <span data-en="products built solo, end to end">productos propios de punta a punta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 02 · EXPERIENCIA ═══════════════ -->
+    <section id="experiencia" class="section section-alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="num">02</span><span data-en="Experience">Experiencia</span></p>
+          <h2 class="section-title" data-en="Where I've worked">Dónde he trabajado</h2>
+        </header>
+
+        <ol class="timeline">
+          <!-- ▼ REVISA LAS FECHAS Y EL DETALLE DE ESTE PUESTO ▼ -->
+          <li class="tl-item">
+            <div class="tl-head">
+              <h3>Minsait</h3>
+              <span class="tl-date" data-en="2022 — Present">2022 — Actualidad</span>
+            </div>
+            <p class="tl-role">
+              <span data-en="Full-Stack Developer">Desarrollador Full-Stack</span>
+              <span class="sep" aria-hidden="true">·</span>
+              <span data-en="Seville">Sevilla</span>
+            </p>
+            <ul class="bullets">
+              <li
+                data-en="Development and maintenance of enterprise applications in technology consulting projects, from requirements to production.">
+                Desarrollo y mantenimiento de aplicaciones empresariales en proyectos de consultoría
+                tecnológica, desde la toma de requisitos hasta producción.
+              </li>
+              <li data-en="REST services with Java and Spring Boot, backed by relational databases.">
+                Servicios REST con Java y Spring Boot sobre bases de datos relacionales.
+              </li>
+              <li data-en="Angular and TypeScript front-ends connected to those services.">
+                Front-ends en Angular y TypeScript conectados a esos servicios.
+              </li>
+              <li data-en="Team workflow with Git: branches, pull requests and code review.">
+                Trabajo en equipo con Git: ramas, pull requests y revisión de código.
+              </li>
+            </ul>
+            <ul class="tags">
+              <li>Java</li><li>Spring Boot</li><li>Angular</li><li>TypeScript</li><li>SQL</li><li>Git</li>
+            </ul>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-head">
+              <h3 data-en="Own products">Producto propio</h3>
+              <span class="tl-date" data-en="2025 — Present">2025 — Actualidad</span>
+            </div>
+            <p class="tl-role">
+              <span data-en="Solo developer">Desarrollador en solitario</span>
+              <span class="sep" aria-hidden="true">·</span>
+              <span data-en="Side projects">Proyectos propios</span>
+            </p>
+            <ul class="bullets">
+              <li data-en="Design, development and distribution of small SaaS products aimed at real businesses.">
+                Diseño, desarrollo y distribución de pequeños productos SaaS dirigidos a negocios reales.
+              </li>
+              <li
+                data-en="The whole cycle on my own: talking to users, architecture, implementation, packaging and installation guides for non-technical people.">
+                El ciclo completo yo solo: hablar con usuarios, arquitectura, implementación,
+                empaquetado y guías de instalación para gente sin conocimientos técnicos.
+              </li>
+            </ul>
+            <ul class="tags">
+              <li>Node.js</li><li>Express</li><li>SQLite</li><li>Twilio</li><li>JavaScript</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 03 · PROYECTOS ═══════════════ -->
+    <section id="proyectos" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="num">03</span><span data-en="Work">Proyectos</span></p>
+          <h2 class="section-title" data-en="Selected work">Trabajo seleccionado</h2>
+          <p class="section-lead" data-en="A product I run myself, plus the projects where I learned the stack.">
+            Un producto que llevo yo mismo, más los proyectos donde aprendí el stack.
+          </p>
+        </header>
+
+        <!-- ── Caso de estudio ── -->
+        <article class="case spotlight">
+          <div class="case-grid">
+            <div class="case-body">
+              <p class="case-kicker">
+                <span class="card-badge" data-en="Case study">Caso de estudio</span>
+                <span class="card-year">2026</span>
+              </p>
+              <h3>Sella</h3>
+              <p class="case-sub" data-en="SMS appointment reminders for dental clinics">
+                Recordatorios de citas por SMS para clínicas dentales
+              </p>
+
+              <div class="case-cols">
+                <div>
+                  <h4 data-en="The problem">El problema</h4>
+                  <p
+                    data-en="A small dental clinic loses a real amount of money every month to no-shows. The chair sits empty, the hour is gone, and nobody at reception has time to call thirty patients one by one.">
+                    Una clínica dental pequeña pierde dinero real cada mes por citas a las que nadie
+                    acude. El sillón se queda vacío, la hora no se recupera y en recepción nadie tiene
+                    tiempo de llamar a treinta pacientes uno a uno.
+                  </p>
+                </div>
+                <div>
+                  <h4 data-en="What I built">Lo que construí</h4>
+                  <p
+                    data-en="A web app that sends automatic reminders 48h and 24h before the appointment, with a one-click confirmation link. It tracks attendance, and the dashboard turns everything into a single figure: money protected this month.">
+                    Una aplicación web que envía recordatorios automáticos 48 h y 24 h antes de la cita,
+                    con enlace de confirmación en un clic. Registra la asistencia y el panel lo convierte
+                    todo en una sola cifra: el dinero salvado este mes.
+                  </p>
+                </div>
+                <div>
+                  <h4 data-en="The hard part">Lo difícil</h4>
+                  <p
+                    data-en="The user is a receptionist with no technical background. It ships as a one-click installer, the reminder templates are editable without touching code, and it deliberately stores no health data.">
+                    El usuario es una recepcionista sin perfil técnico. Se distribuye con instalador de un
+                    clic, las plantillas se editan sin tocar código y, a propósito, no guarda ningún dato
+                    de salud.
+                  </p>
+                </div>
+              </div>
+
+              <ul class="tags">
+                <li>Node.js</li><li>Express</li><li>SQLite</li><li>EJS</li><li>Twilio</li>
+                <li>node-cron</li><li>scrypt</li>
+              </ul>
+            </div>
+
+            <!-- Maqueta del producto -->
+            <div class="mock-wrap">
+              <div class="mock" aria-label="Vista del panel de Sella">
+                <div class="mock-bar">
+                  <span class="mock-dots"><i></i><i></i><i></i></span>
+                  <span class="mock-title">Sella</span>
+                </div>
+                <div class="mock-body">
+                  <p class="mock-label" data-en="Money protected this month">Dinero protegido este mes</p>
+                  <p class="mock-hero">4.850 €</p>
+
+                  <div class="mock-tiles">
+                    <div class="mock-tile">
+                      <b>18</b><span data-en="confirmed">confirmadas</span>
+                    </div>
+                    <div class="mock-tile amber">
+                      <b>6</b><span data-en="pending">pendientes</span>
+                    </div>
+                    <div class="mock-tile rose">
+                      <b>2</b><span>no-shows</span>
+                    </div>
+                  </div>
+
+                  <div class="mock-chart" aria-hidden="true">
+                    <i style="--h: 34%"></i><i style="--h: 46%"></i><i style="--h: 41%"></i>
+                    <i style="--h: 63%"></i><i style="--h: 78%"></i><i class="on" style="--h: 100%"></i>
+                  </div>
+
+                  <ul class="mock-list">
+                    <li><span>Rosa Marín</span><em class="ok" data-en="confirmed">confirmada</em></li>
+                    <li><span>Diego Alonso</span><em class="teal" data-en="reminded">recordada</em></li>
+                    <li><span>Ana Pérez</span><em class="amber" data-en="pending">pendiente</em></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="cards">
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-year">2026</span></p>
+            <h3>Micro SaaS</h3>
+            <p class="card-sub" data-en="AI email assistant">Asistente de email con IA</p>
+            <p
+              data-en="A small SaaS that drafts and triages email with a language model. Built deliberately small to validate the idea with real users before investing more.">
+              Micro SaaS que redacta y clasifica correo con un modelo de lenguaje. Hecho a propósito
+              pequeño, para validar la idea con usuarios reales antes de invertir más.
+            </p>
+            <ul class="tags"><li>JavaScript</li><li>Node.js</li><li>LLM API</li></ul>
+            <a class="card-link" href="https://github.com/Alexi45/Micro_SaaS" target="_blank" rel="noopener">
+              <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-year">2025</span></p>
+            <h3>gemini-poc</h3>
+            <p class="card-sub" data-en="LLM integration proof of concept">Prueba de concepto con LLM</p>
+            <p
+              data-en="Integration of the Gemini API with a React front-end and a Node.js backend: streaming responses, prompt handling and keeping API keys off the client.">
+              Integración de la API de Gemini con un front en React y un backend en Node.js:
+              respuestas en streaming, manejo de prompts y claves que nunca llegan al cliente.
+            </p>
+            <ul class="tags"><li>React</li><li>Node.js</li><li>Gemini API</li></ul>
+            <a class="card-link" href="https://github.com/Alexi45/gemini-poc" target="_blank" rel="noopener">
+              <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-year">2022</span></p>
+            <h3>PixelSky Studios</h3>
+            <p class="card-sub" data-en="Final degree project — DAM">Proyecto de fin de grado — DAM</p>
+            <p
+              data-en="Platform with user login built in Java 8 and Angular, connected to an Android app so scores sync between the game and the web.">
+              Plataforma con login de usuarios hecha en Java 8 y Angular, conectada con una aplicación
+              Android para que las puntuaciones se sincronicen entre el juego y la web.
+            </p>
+            <ul class="tags"><li>Java 8</li><li>Spring</li><li>Angular</li><li>Android</li></ul>
+            <a class="card-link" href="https://github.com/Alexi45/PixelSky_Studios_Back" target="_blank"
+              rel="noopener">
+              <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-year">2022</span></p>
+            <h3>Notebook</h3>
+            <p class="card-sub" data-en="CRUD platform secured with JWT">Plataforma CRUD protegida con JWT</p>
+            <p
+              data-en="Multi-entity CRUD application with JWT authentication: Spring Boot API, Angular front-end and role-based access.">
+              Aplicación con varios CRUD y autenticación con JWT: API en Spring Boot, front-end en
+              Angular y acceso por roles.
+            </p>
+            <ul class="tags"><li>Spring Boot</li><li>Angular</li><li>JWT</li><li>MySQL</li></ul>
+            <a class="card-link" href="https://github.com/Alexi45/Notebook_Front" target="_blank" rel="noopener">
+              <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-year">2022</span></p>
+            <h3 data-en="Test automation">Automatización de pruebas</h3>
+            <p class="card-sub" data-en="Selenium suites, with and without Maven">
+              Suites de Selenium, con y sin Maven
+            </p>
+            <p
+              data-en="End-to-end test suites in Java, including BDD scenarios written in Cucumber: page objects, explicit waits and reusable steps.">
+              Suites de pruebas end-to-end en Java, incluyendo escenarios BDD escritos en Cucumber:
+              page objects, esperas explícitas y pasos reutilizables.
+            </p>
+            <ul class="tags"><li>Selenium</li><li>Cucumber</li><li>Maven</li><li>Java</li></ul>
+            <a class="card-link" href="https://github.com/Alexi45/Selenium_Example_With_Maven" target="_blank"
+              rel="noopener">
+              <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card card-quiet">
+            <p class="card-top"><span class="card-year">2022 — 2023</span></p>
+            <h3 data-en="And a few more">Y algunos más</h3>
+            <p
+              data-en="Vanilla JavaScript exercises (shopping cart, search, email sending), a PHP login, a C# WPF desktop app and an Android role-playing game.">
+              Ejercicios en JavaScript puro (carrito, buscador, envío de emails), un login en PHP,
+              una app de escritorio en C# WPF y un juego de rol para Android.
+            </p>
+            <a class="card-link" href="https://github.com/Alexi45?tab=repositories" target="_blank" rel="noopener">
+              <span data-en="All repositories">Todos los repositorios</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 04 · STACK ═══════════════ -->
+    <section id="skills" class="section section-alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="num">04</span><span data-en="Stack">Stack</span></p>
+          <h2 class="section-title" data-en="What I work with">Con qué trabajo</h2>
+        </header>
+
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <ul class="tags">
+              <li>Java</li><li>Spring Boot</li><li>Node.js</li><li>Express</li><li>PHP</li><li>REST</li><li>JWT</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul class="tags">
+              <li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>React</li><li>HTML5</li><li>CSS3</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 data-en="Mobile &amp; desktop">Móvil y escritorio</h3>
+            <ul class="tags"><li>Android (Java)</li><li>C#</li><li>WPF</li><li>Java Swing</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3 data-en="Data">Datos</h3>
+            <ul class="tags"><li>SQL</li><li>MySQL</li><li>SQLite</li><li>JPA / Hibernate</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3 data-en="Testing &amp; tooling">Testing y herramientas</h3>
+            <ul class="tags"><li>Selenium</li><li>Cucumber</li><li>Maven</li><li>Git</li><li>GitHub</li></ul>
+          </div>
+          <div class="skill-card">
+            <h3 data-en="Ways of working">Forma de trabajar</h3>
+            <ul class="tags">
+              <li data-en="Teamwork">Trabajo en equipo</li>
+              <li data-en="Code review">Revisión de código</li>
+              <li data-en="Requirements gathering">Toma de requisitos</li>
+              <li data-en="Technical documentation">Documentación técnica</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 05 · FORMACIÓN ═══════════════ -->
+    <section id="formacion" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="num">05</span><span data-en="Education">Formación</span></p>
+          <h2 class="section-title" data-en="Training &amp; certifications">Formación y certificaciones</h2>
+        </header>
+
+        <div class="edu-grid">
+          <ol class="timeline timeline-compact">
+            <li class="tl-item">
+              <div class="tl-head">
+                <h3 data-en="Higher Degree in Multiplatform Application Development">
+                  Grado Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+                <span class="tl-date">2020 — 2022</span>
+              </div>
+              <p class="tl-role">Salesianas María Auxiliadora Nervión · Sevilla</p>
+            </li>
+            <li class="tl-item">
+              <div class="tl-head">
+                <h3 data-en="Vocational Degree in Telecommunications">
+                  Grado Medio en Técnico de Telecomunicaciones</h3>
+                <span class="tl-date">2018 — 2020</span>
+              </div>
+              <p class="tl-role">Salesianos Triana · Sevilla</p>
+            </li>
+            <li class="tl-item">
+              <div class="tl-head">
+                <h3 data-en="Compulsory Secondary Education">Educación Secundaria Obligatoria</h3>
+                <span class="tl-date">2013 — 2017</span>
+              </div>
+              <p class="tl-role">Colegio San Francisco Solano · Nervión, Sevilla</p>
+            </li>
+          </ol>
+
+          <aside class="certs">
+            <h3 data-en="Certifications &amp; courses">Certificaciones y cursos</h3>
+            <ul class="cert-list">
+              <li><span>Nuevas Arquitecturas</span><em>Atos · 2022</em></li>
+              <li><span data-en="Selenium with Java">Selenium con Java</span><em>OpenWebinars · 2022</em></li>
+              <li><span data-en="Git fundamentals">Fundamentos de Git</span><em>OpenWebinars · 2022</em></li>
+              <li><span>Angular</span><em>OpenWebinars · 2022</em></li>
+              <li><span data-en="Java fundamentals">Fundamentos de Java</span><em>OpenWebinars · 2022</em></li>
+              <li><span>HTML5 &amp; CSS3</span><em>OpenWebinars · 2022</em></li>
+              <li><span>LinkedIn Learning</span><em>Atos · 2022</em></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 06 · CONTACTO ═══════════════ -->
+    <section id="contacto" class="section contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow center"><span class="num">06</span><span data-en="Contact">Contacto</span></p>
+        <h2 class="section-title" data-en="Let's talk">Hablemos</h2>
+        <p class="section-lead center"
+          data-en="Looking for a full-stack developer, or want to talk about a project? Email is the fastest way to reach me — I usually reply the same day.">
+          ¿Buscas un desarrollador full-stack o quieres comentar un proyecto? El correo es la vía más
+          rápida: suelo responder el mismo día.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary magnetic" href="mailto:jarlaaxlety@gmail.com">jarlaaxlety@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/alejandro-riscart-rosado-53802123b/"
+            target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="https://github.com/Alexi45" target="_blank" rel="noopener">GitHub
+            <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Alejandro Riscart Rosado</p>
+      <p class="footer-hint">
+        <span data-en="Press">Pulsa</span> <kbd>⌘</kbd><kbd>K</kbd>
+      </p>
+      <p><a class="to-top" href="#top" data-en="Back to top ↑">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ Paleta de comandos ═══════════════ -->
+  <div class="palette" id="palette" hidden>
+    <div class="palette-backdrop" data-close></div>
+    <div class="palette-box" role="dialog" aria-modal="true" aria-label="Paleta de comandos">
+      <div class="palette-input">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.2" />
+          <path d="m15.2 15.2 4 4" stroke-linecap="round" />
+        </svg>
+        <input id="paletteInput" type="text" autocomplete="off" spellcheck="false"
+          placeholder="Buscar sección o acción…" aria-label="Buscar">
+        <kbd>ESC</kbd>
+      </div>
+      <ul class="palette-list" id="paletteList" role="listbox"></ul>
+      <div class="palette-foot">
+        <span><kbd>↑</kbd><kbd>↓</kbd> <span data-en="navigate">moverse</span></span>
+        <span><kbd>↵</kbd> <span data-en="select">elegir</span></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
