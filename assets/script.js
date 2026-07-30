@@ -77,11 +77,21 @@
 
   var portrait = $('#portraitImg');
   var monogram = $('#monogram');
-  portrait.addEventListener('load', function () {
+
+  function showPortrait() {
     portrait.hidden = false;
     monogram.style.display = 'none';
-  });
+  }
+
+  portrait.addEventListener('load', showPortrait);
   portrait.addEventListener('error', function () { portrait.remove(); });
+
+  // Con la caché caliente la imagen ya está lista antes de llegar aquí y el
+  // evento 'load' no vuelve a dispararse: hay que comprobarlo a mano.
+  if (portrait.complete) {
+    if (portrait.naturalWidth > 0) showPortrait();
+    else portrait.remove();
+  }
 
   var cvLinks = $$('[data-cv]');
   if (cvLinks.length && /^https?:$/.test(location.protocol) && window.fetch) {
