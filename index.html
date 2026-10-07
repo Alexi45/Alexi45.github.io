@@ -353,9 +353,15 @@
                 El ciclo completo yo solo: hablar con usuarios, arquitectura, implementación,
                 empaquetado y guías de instalación para gente sin conocimientos técnicos.
               </li>
+              <li
+                data-en="PresupPRO, live with Stripe payments; the website for El Lirón, a real local business; and Pixa, an Android game.">
+                PresupPRO, publicado y con pagos integrados con Stripe; la web de El Lirón, un negocio
+                real de la zona; y Pixa, un juego para Android.
+              </li>
             </ul>
             <ul class="tags">
-              <li>Node.js</li><li>Express</li><li>SQLite</li><li>Twilio</li><li>JavaScript</li>
+              <li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Stripe</li><li>Kotlin</li>
+              <li>SQLite</li><li>Twilio</li>
             </ul>
           </li>
         </ol>
@@ -368,8 +374,10 @@
         <header class="section-head">
           <p class="eyebrow"><span class="num">03</span><span data-en="Work">Proyectos</span></p>
           <h2 class="section-title" data-en="Selected work">Trabajo seleccionado</h2>
-          <p class="section-lead" data-en="A product I run myself, plus the projects where I learned the stack.">
-            Un producto que llevo yo mismo, más los proyectos donde aprendí el stack.
+          <p class="section-lead"
+            data-en="Products I build and run myself — one of them already live — plus the projects where I learned the stack.">
+            Productos que construyo y llevo yo mismo —uno de ellos ya en producción—, más los proyectos
+            donde aprendí el stack.
           </p>
         </header>
 
@@ -462,6 +470,63 @@
         </article>
 
         <div class="cards">
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-badge" data-en="Live">En producción</span><span class="card-year">2026</span></p>
+            <h3>PresupPRO</h3>
+            <p class="card-sub" data-en="PDF quotes for freelancers">Presupuestos en PDF para autónomos</p>
+            <p
+              data-en="Self-serve web tool for freelancers and tradespeople to create professional quotes with a live preview and no sign-up. The PDF is generated in the browser and payments go through Stripe Checkout, verified server-side with Netlify Functions.">
+              Herramienta web autoservicio para que autónomos y gremios hagan presupuestos profesionales
+              con vista previa en vivo y sin registro. El PDF se genera en el navegador y el cobro pasa
+              por Stripe Checkout, verificado en servidor con Netlify Functions.
+            </p>
+            <ul class="tags">
+              <li>React</li><li>TypeScript</li><li>Vite</li><li>jsPDF</li><li>Stripe</li><li>Netlify Functions</li>
+            </ul>
+            <div class="card-links">
+              <a class="card-link" href="https://presuapp.netlify.app" target="_blank" rel="noopener">
+                <span data-en="Live site">Ver en vivo</span><span aria-hidden="true">↗</span>
+              </a>
+              <a class="card-link" href="https://github.com/Alexi45/presu" target="_blank" rel="noopener">
+                <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-badge" data-en="Real business">Negocio real</span><span class="card-year">2026</span></p>
+            <h3>El Lirón</h3>
+            <p class="card-sub" data-en="Website for a game shop &amp; café">Web para una tienda de juegos y cafetería</p>
+            <p
+              data-en="Board games, Magic and café in Montequinto: customers see which tables are free in real time, book them and sign up for tournaments. Staff run it from a role-based admin panel with an audit log and TOTP 2FA; sessions use short-lived JWTs with rotating refresh tokens.">
+              Juegos de mesa, Magic y cafetería en Montequinto: los clientes ven en directo qué mesas
+              hay libres, reservan y se apuntan a torneos. El equipo lo gestiona desde un panel con roles,
+              registro de auditoría y 2FA por TOTP; la sesión usa JWT de corta duración con refresh token rotatorio.
+            </p>
+            <ul class="tags">
+              <li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>SQLite</li><li>JWT</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Alexi45/elliron" target="_blank" rel="noopener">
+              <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card spotlight">
+            <p class="card-top"><span class="card-badge">Android</span><span class="card-year">2026</span></p>
+            <h3>Pixa</h3>
+            <p class="card-sub" data-en="Nonogram puzzle game">Juego de nonogramas</p>
+            <p
+              data-en="Native game with endless puzzles generated on the phone. The generator only accepts a puzzle if a logic solver (line-by-line dynamic programming) can finish it, so every puzzle has a unique solution and you never have to guess. Monetised with AdMob.">
+              Juego nativo con puzzles infinitos generados en el propio móvil. El generador solo acepta un
+              puzzle si un solucionador lógico (programación dinámica por línea) lo resuelve entero, así que
+              siempre hay solución única y nunca hace falta adivinar. Monetizado con AdMob.
+            </p>
+            <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>AdMob</li></ul>
+            <a class="card-link" href="https://github.com/Alexi45/Pixa-APP" target="_blank" rel="noopener">
+              <span data-en="Repository">Repositorio</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
           <article class="card spotlight">
             <p class="card-top"><span class="card-year">2026</span></p>
             <h3>Micro SaaS</h3>
@@ -580,15 +645,19 @@
           </div>
           <div class="skill-card">
             <h3 data-en="Mobile &amp; desktop">Móvil y escritorio</h3>
-            <ul class="tags"><li>Android (Java)</li><li>C#</li><li>WPF</li><li>Java Swing</li></ul>
+            <ul class="tags">
+              <li>Kotlin</li><li>Jetpack Compose</li><li>Android (Java)</li><li>C#</li><li>WPF</li><li>Java Swing</li>
+            </ul>
           </div>
           <div class="skill-card">
             <h3 data-en="Data">Datos</h3>
-            <ul class="tags"><li>SQL</li><li>MySQL</li><li>SQLite</li><li>JPA / Hibernate</li></ul>
+            <ul class="tags"><li>SQL</li><li>Oracle</li><li>MySQL</li><li>SQLite</li><li>JPA / Hibernate</li></ul>
           </div>
           <div class="skill-card">
             <h3 data-en="Testing &amp; tooling">Testing y herramientas</h3>
-            <ul class="tags"><li>Selenium</li><li>Cucumber</li><li>Maven</li><li>Git</li><li>GitHub</li></ul>
+            <ul class="tags">
+              <li>Selenium</li><li>Cucumber</li><li>Maven</li><li>Git</li><li>GitHub</li><li>Stripe</li><li>Netlify</li>
+            </ul>
           </div>
           <div class="skill-card">
             <h3 data-en="Ways of working">Forma de trabajar</h3>
